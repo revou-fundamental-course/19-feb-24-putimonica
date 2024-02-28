@@ -7,48 +7,140 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header> 
-    <img src="Assets/logo.png" alt="logo">
-    <ul class="navigation">
-        <li>Home</li>
-        <li>Our Profile</li>
-        <li>Contact US</li>
-    </ul>
-</header>
-<h1>Our office</h1>
-<div class="office">
-    <div>  
-        <div class="circle-image" style="background-image: url(Assets/Jakarta.jpg);"></div>
-        <h5>Jakarta</h5>
-    </div>
-    <div>
-        <div class="circle-image" style="background-image: url(Assets/Bandung.jpg);"></div>
-        <h5>Bandung</h5>
-    </div>
-    <div>
-        <div class="circle-image" style="background-image: url(Assets/Yogyakarta.jpg);"></div>
-        <h5>Yogyakarta</h5>
-    </div>
-</div>
-<div class="inquiry-box">
-    <form class="inquiry-box">
-        <label for="name"> Name :</label>
-        <input type="text" id="name" name="name">
-
-        <label for="dob"> Date of Birth: </label>
-        <input type="date" id="dob">
+<script src="js/script.js"></script>
+<header>
+    <nav class="nav">
+        <img src="Assets/logo.png" href="/" class="logo"></a>
     
-        <label for="gender">Gender: </label>
-        <select id="gender">
-            <option value="male"> Male</option>
-            <option value="female"> Female</option>
-        </select>
-    </form>
-    <div class="output">
-        
-    </div>
+        <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    
+        <div class="nav__link hide">
+            <a href="#about" class="active">About US</a>
+            <a href="#profile">Profile</a>
+            <a href="#product">Product</a>
+            <a href="#contactus">Contact Us</a>
+        </div>
+    </nav>
+</header>
+<h1> Hi <span id="name"> " "</span> Welcome to Puti Monica Boutique!</h1>
+<form name="myForm" >
+    Name: <input type="text" name="fname" required="true" type="text" placeholder="Please Enter Your Name">
+    <input type="submit" value="Submit">
+  </form>
+<div class="inquiry-box">
+<form class="inquiry-form">
+    <label for="dob"> Date of Birth: 
+    <input type="date" id="dob"></label>
 
-
+    <label for="gender">Gender: 
+    <select id="gender">
+        <option value="male"> Male</option>
+        <option value="female"> Female</option></label>
+    </select>
+</form>
 </div>
+
+<article class="aboutCompany">
+    <h1>About Company</h1>
+    <p> A boutique is a small shop, especially one that sells women's clothes and jewelry. If you like to shop, you probably love going to all the little boutiques downtown. Boutique comes from a French word of the same spelling, which means any small shop.</p>
+
+<article class="vmission">
+    <h2>Vission</h2>
+    <p>A vision statement is a one-sentence statement that explains the company's core values, the culture, the direction of your company's long-term growth, the company mission, or what you want your company to become. This needs to be clearly understood by the employees, customers, and investors alike.</p>
+</article>
+<article class="vmission">
+    <h2>Mission</h2>
+    <p>“To be the ultimate house of luxury, defining style and creating desire, now and forever.”</p>
+</article>
+</article>
+
+<h1>Our Product</h1>
+<div class="product">
+    <div>  
+        <div class="circle-image" style="background-image: url(Assets/dresss.jpeg);"></div>
+        <h2>Dress</h2>
+        <p>A dress (also known as a frock or a gown) is a garment traditionally worn by women or girls consisting of a skirt with an attached bodice (or a matching bodice giving the effect of a one-piece garment).[1] It consists of a top piece that covers the torso and hangs down over the legs. A dress can be any one-piece garment containing a skirt of any length, and can be formal or casual.
+            A dress can have sleeves, straps, or be held up with elastic around the chest, leaving the shoulders bare. Dresses also vary in color.
+            The hemlines of dresses vary depending on modesty, weather, fashion or the personal taste of the wearer.</p>
+    </div>
+    <div>
+        <div class="circle-image" style="background-image: url(Assets/tshirt.jpeg);"></div>
+        <h2>Tshirt</h2>
+        <p>T-shirt (also spelled tee shirt, or tee for short) is a style of fabric shirt named after the T shape of its body and sleeves. Traditionally, it has short sleeves and a round neckline, known as a crew neck, which lacks a collar. T-shirts are generally made of stretchy, light, and inexpensive fabric and are easy to clean. The T-shirt evolved from undergarments used in the 19th century and, in the mid-20th century, transitioned from undergarments to general-use casual clothing.
+            They are typically made of cotton textile in a stockinette or jersey knit, which has a distinctively pliable texture compared to shirts made of woven cloth. Some modern versions have a body made from a continuously knitted tube, produced on a circular knitting machine, such that the torso has no side seams. The manufacture of T-shirts has become highly automated and may include cutting fabric with a laser or a water jet.</p>
+    </div>
+    <div>
+        <div class="circle-image" style="background-image: url(Assets/skirt.avif);"></div>
+        <h2>Skirt</h2>
+        <p>skirt is the lower part of a dress or a separate outer garment that covers a person from the waist downwards.[1]
+            At its simplest, a skirt can be a draped garment made out of a single piece of fabric (such as pareos). However, most skirts are fitted to the body at the waist or hips and fuller below, with the fullness introduced by means of darts, gores, pleats, or panels. Modern skirts are usually made of light to mid-weight fabrics, such as denim, jersey, worsted, or poplin. Skirts of thin or clingy fabrics are often worn with slips to make the material of the skirt drape better and for modesty.
+            In modern times, skirts are very commonly worn by women and girls. Some exceptions include the izaar, worn by many Muslim cultures, and the kilt, a traditional men's garment in Scotland, Ireland, and sometimes England. Fashion designers such as Jean Paul Gaultier, Vivienne Westwood, Kenzo and Marc Jacobs have also shown men's skirts. Transgressing social codes, Gaultier frequently introduces the skirt into his men's wear collections as a means of injecting novelty into male attire, most famously the sarong seen on David Beckham.[2]</p>
+    </div>
+</div>
+<h1>Our Branches</h1>
+<table id="myTable">
+<tr>
+    <th id="name">PIC Name</th>
+    <th id="email">Email</th>
+    <th id="phone">Phone</th>
+    <th id="addr">Address</th>
+</tr>
+ <tr>
+    <td id="myTd" headers="names">John Doe</td>
+    <td headers="email"> Jakartabranches@example.com</td>
+    <td headers="phone">+629999</td>
+    <td headers="addr">Jl. Kuningan, Jakarta</td>
+</tr>
+<tr>
+    <td headers="names">Clarck Joe</td>
+    <td headers="email">Bandungbranches@example.com</td>
+    <td headers="phone">+621234</td>
+    <td headers="addr">Jl. Veteran, Bandung</td>
+</tr>
+<tr>
+    <td headers="names">Albert Liam</td>
+    <td headers="email">Yogykaratabranches@example.com</td>
+    <td headers="phone">+6284652</td>
+    <td headers="addr">Jl. Indah, Yogykarta</td>
+</tr>
+<tr>
+    <td  headers="names">Annie Julie</td>
+    <td headers="email">Malangbranches@example.com</td>
+    <td headers="phone">+623445</td>
+    <td headers="addr">Jl. Perjuangan, Malang</td>
+</tr>
+<tr>
+    <td headers="names">Clara Fiean</tdß>
+    <td headers="email">Bekasibranches@example.com</td>
+    <td headers="phone">+623567</td>
+    <td headers="addr">Jl.Kemerdekaan, Bekasi</td>
+</tr>
+</table>
+<div class="wrapper"> 
+    <h2>Contact us</h2> 
+    <div id="error_message"> 
+</div> 
+<form id="email-form" onsubmit="submitForm(); return false;">
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email address" required>
+    <br>
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" placeholder="Enter the subject of the email" required>
+    <br>
+    <label for="message">Message:</label>
+    <textarea id="message" placeholder="Enter your message" required></textarea>
+    <br>
+    <button type="submit">Send</button>
+  </form>
+
+</div> 
 </body>
+<footer>
+    <p>&copy; Copyright RevoU <span class="year">2024</span></p>
+</footer>
 </html>
